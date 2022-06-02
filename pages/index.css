@@ -3,6 +3,9 @@
 
 /* Styles */
 @import url('../blocks/page/page.css');
+@import url('../blocks/logo/logo.css');
+@import url('../blocks/header/header.css');
+
 /* Fonts */
 
 /* General */
