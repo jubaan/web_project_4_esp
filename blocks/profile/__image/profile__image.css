@@ -1,0 +1,7 @@
+.profile__image {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: url('../../../images/profile__jacques-cousteau.jpg') no-repeat center;
+  background-size: cover;
+}

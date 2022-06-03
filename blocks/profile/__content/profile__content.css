@@ -1,0 +1,15 @@
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  color: var(--color-light);
+  margin-left: 30px;
+  gap: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__content {
+    margin-left: 0;
+    gap: 14px;
+  }
+}
