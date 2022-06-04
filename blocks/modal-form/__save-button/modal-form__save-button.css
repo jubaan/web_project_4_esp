@@ -6,6 +6,12 @@
   font-size: 18px;
   line-height: 22px;
   color: var(--color-light);
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+}
+
+.modal-form__save-button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-widht: 425px) {
