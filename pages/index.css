@@ -38,6 +38,14 @@
 @import url('../blocks/form/__pseudo-item/form__pseudo-item.css');
 @import url('../blocks/form/__item/_type/form__item_type_checkbox.css');
 @import url('../blocks/form/__pseudo-item/_type/form__pseudo-item_type_checkbox.css');
+@import url('../blocks/modal-form/modal-form.css');
+@import url('../blocks/modal-form/__container/modal-form__container.css');
+@import url('../blocks/modal-form/__close-button/modal-form__close-button.css'); 
+@import url('../blocks/modal-form/__content/modal-form__content.css');
+@import url('../blocks/modal-form/__title/modal-form__title.css');
+@import url('../blocks/modal-form/__input/modal-form__input.css');
+@import url('../blocks/modal-form/__save-button/modal-form__save-button.css');
+
 
 /* Fonts */
 @font-face {
@@ -91,4 +99,15 @@
 
 body {
   background-color: var(--color-dark);
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

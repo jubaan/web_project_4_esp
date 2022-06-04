@@ -1,0 +1,19 @@
+.modal-form__close-button {
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 520px) {
+  .modal-form__close-button {
+    top: -56px;
+    right: 5px;
+    height: 26px;
+    width: 26px;
+    transition: all 0.2s ease-in-out;
+  }
+}

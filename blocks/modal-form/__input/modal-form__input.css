@@ -1,0 +1,19 @@
+.modal-form__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  padding: 9px 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-dark);
+  height: 50px;
+}
+
+.modal-form__input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.modal-form__input:focus {
+  outline: none;
+}

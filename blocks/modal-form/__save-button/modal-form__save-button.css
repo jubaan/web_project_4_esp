@@ -1,0 +1,16 @@
+.modal-form__save-button {
+  height: 50px;
+  width: 358px;
+  background-color: var(--color-dark);
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-light);
+}
+
+@media screen and (max-widht: 425px) {
+  .modal-form__save-button {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
