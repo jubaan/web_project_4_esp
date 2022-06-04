@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-  const modalForm = document.querySelector('.modal-form');
+  const modalForm = document.querySelector('.modal-form__container');
   let name = modalForm.querySelector('#name');
   let profession = modalForm.querySelector('#profession');
   let profileName = document.querySelector('.profile__name');
