@@ -1,0 +1,26 @@
+.form__pseudo-item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 19px;
+  border: 1px solid black;
+}
+
+/* .form__pseudo-item_type_checkbox {
+  border: none;
+}
+
+.form__item_type_checkbox+.form__pseudo-item_type_checkbox {
+  width: 21px;
+  height: 19px;
+  transition: opacity 0.1s linear;
+  background-image: url('../../../images/favorite-icon.svg');
+}
+
+.form__item_type_checkbox:hover+.form__pseudo-item_type_checkbox {
+  opacity: 0.5;
+}
+
+.form__item_type_checkbox:checked+.form__pseudo-item_type_checkbox {
+  background-image: url('../../../images/favorite-fill-icon.svg');
+} */

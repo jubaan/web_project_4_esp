@@ -1,0 +1,6 @@
+.element__content {
+  display: flex;
+  align-items: center;
+  width: 246px;
+  margin: 25px auto 0;
+}

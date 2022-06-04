@@ -17,10 +17,27 @@
 @import url('../blocks/profile/__button/profile__button.css');
 @import url('../blocks/profile/__button/_add/profile__button_add.css');
 @import url('../blocks/profile/__button/_edit/profile__button_edit.css');
+@import url('../blocks/icon/icon.css');
 @import url('../blocks/icon/_type/icon_type_edit.css');
 @import url('../blocks/icon/_type/icon_type_add.css');
+@import url('../blocks/icon/_type/icon_type_favorite.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__text/footer__text.css');
+@import url('../blocks/elements/elements.css');
+@import url('../blocks/element/element.css');
+@import url('../blocks/element/__image/element__image.css');
+@import url('../blocks/element/__image/_place/element__image_place_valle-de-yosemite.css');
+@import url('../blocks/element/__image/_place/element__image_place_lago-louise.css');
+@import url('../blocks/element/__image/_place/element__image_place_montanas-calvas.css');
+@import url('../blocks/element/__image/_place/element__image_place_latemar.css');
+@import url('../blocks/element/__image/_place/element__image_place_vanoise-national-park.css');
+@import url('../blocks/element/__image/_place/element__image_place_lago-di-braies.css');
+@import url('../blocks/element/__content/element__content.css');
+@import url('../blocks/element/__place-name/element__place-name.css');
+@import url('../blocks/form/__item/form__item.css');
+@import url('../blocks/form/__pseudo-item/form__pseudo-item.css');
+@import url('../blocks/form/__item/_type/form__item_type_checkbox.css');
+@import url('../blocks/form/__pseudo-item/_type/form__pseudo-item_type_checkbox.css');
 
 /* Fonts */
 @font-face {
