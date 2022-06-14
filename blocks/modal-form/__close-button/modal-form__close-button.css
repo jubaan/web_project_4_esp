@@ -4,15 +4,13 @@
   right: -45px;
   height: 40px;
   width: 40px;
-  transition: all 0.2s ease-in-out;
   cursor: pointer;
   transition: opacity 0.1s linear;
-  }
-  
-  .modal-form__close-button:hover {
-    opacity: 0.6;
-  }
+}
 
+.modal-form__close-button:hover {
+  opacity: 0.6;
+}
 
 @media screen and (max-width: 520px) {
   .modal-form__close-button {
