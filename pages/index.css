@@ -21,6 +21,7 @@
 @import url('../blocks/icon/_type/icon_type_edit.css');
 @import url('../blocks/icon/_type/icon_type_add.css');
 @import url('../blocks/icon/_type/icon_type_favorite.css');
+@import url('../blocks/icon/_type/icon_type_trash.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__text/footer__text.css');
 @import url('../blocks/elements/elements.css');

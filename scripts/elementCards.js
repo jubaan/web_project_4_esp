@@ -49,10 +49,12 @@ initialCards.forEach((elementDetails) => {
   elements.append(cardElement);
 });
 
-const likeButton = cardElementTemplate.cardElementTemplate
-  .querySelector('.element')
-  .cloneNode(true)
-  .querySelector('.form__item');
-likeButton.addEventListener('click', function () {
-  likeButton.checked = true;
+const cardElement = cardElementTemplate.querySelector('.element').cloneNode(true);
+const trashButtons = Array.from(document.querySelectorAll('.element__icon.icon_type_trash'));
+
+trashButtons.map(trashButton => {
+  trashButton.addEventListener('click', function (e) {
+    e.target.parentElement.remove();
+    console.log(e.target.parentElement);
+  });
 });

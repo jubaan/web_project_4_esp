@@ -1,0 +1,13 @@
+.icon_type_trash {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  height: 19px;
+  width: 17px;
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.icon_type_trash:hover {
+  opacity: 0.6;
+}
