@@ -25,35 +25,34 @@ const initialCards = [
   },
 ];
 
-window.addEventListener('load', function () {
-  const cardElementTemplate = document.querySelector('#elementCard').content;
-  const elements = document.querySelector('.elements');
+const cardElementTemplate = document.querySelector('#elementCard').content;
+const elements = document.querySelector('.elements');
 
-  initialCards.forEach((elementDetails) => {
-    const cardElement = cardElementTemplate
-      .querySelector('.element')
-      .cloneNode(true);
-
-    cardElement.querySelector('.element__place-name').textContent =
-      elementDetails.name;
-    cardElement.querySelector('.element__place-image').src = elementDetails.link;
-    cardElement.querySelector('.element__place-image').alt =
-      elementDetails.name;
-    cardElement.querySelector('.element__form-label').for = elementDetails.name.toLowerCase().split(" ").join('-');
-    cardElement.querySelector('.form__item_type_checkbox').name =
-      elementDetails.name.toLowerCase().split(' ').join('-');
-    cardElement.querySelector('.form__item_type_checkbox').id =
-      elementDetails.name.toLowerCase().split(' ').join('-');
-    cardElement.querySelector('.form__item_type_checkbox').value =
-      elementDetails.name.toLowerCase().split(' ').join('-');
-
-    elements.append(cardElement);
-  });
-
-  const likeButton = cardElementTemplate.cardElementTemplate
+initialCards.forEach((elementDetails) => {
+  const cardElement = cardElementTemplate
     .querySelector('.element')
-    .cloneNode(true).querySelector('.form__item');
-  likeButton.addEventListener('click', function () {
-    likeButton.checked = true;
-  });
+    .cloneNode(true);
+
+  cardElement.querySelector('.element__place-name').textContent =
+    elementDetails.name;
+  cardElement.querySelector('.element__place-image').src = elementDetails.link;
+  cardElement.querySelector('.element__place-image').alt = elementDetails.name;
+  cardElement.querySelector('.element__form-label').htmlFor =
+    elementDetails.name.toLowerCase().split(' ').join('-');
+  cardElement.querySelector('.form__item_type_checkbox').name =
+    elementDetails.name.toLowerCase().split(' ').join('-');
+  cardElement.querySelector('.form__item_type_checkbox').id =
+    elementDetails.name.toLowerCase().split(' ').join('-');
+  cardElement.querySelector('.form__item_type_checkbox').value =
+    elementDetails.name.toLowerCase().split(' ').join('-');
+
+  elements.append(cardElement);
+});
+
+const likeButton = cardElementTemplate.cardElementTemplate
+  .querySelector('.element')
+  .cloneNode(true)
+  .querySelector('.form__item');
+likeButton.addEventListener('click', function () {
+  likeButton.checked = true;
 });

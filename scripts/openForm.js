@@ -1,9 +1,7 @@
-window.addEventListener('load', function () {
-  const editButton = document.querySelector('.profile__button_edit');
-  
-  editButton.addEventListener('click', function () {
-    const modalForm = document.querySelector(".modal-form__container");
+const editButton = document.querySelector('.profile__button_edit');
 
-    modalForm.classList.remove("offscreen");
-  });
+editButton.addEventListener('click', function () {
+  const modalForm = document.querySelector('.modal-form__container');
+
+  modalForm.classList.remove('offscreen');
 });
