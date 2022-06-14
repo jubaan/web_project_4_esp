@@ -1,0 +1,19 @@
+.modal-preview__container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 90px auto 68px;
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 425px) {
+  .modal-preview__container {
+    padding: 136px auto 111px;
+  }
+}

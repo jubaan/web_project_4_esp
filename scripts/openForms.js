@@ -17,3 +17,22 @@ addNewCardButton.addEventListener('click', function () {
 
   addNewCardModalForm.classList.remove('offscreen');
 });
+
+const openPreview = function () {
+  const previewImageButtons = Array.from(
+    document.querySelectorAll('.element__place-image')
+  );
+
+  previewImageButtons.map((previewImageButton) => {
+    previewImageButton.addEventListener('click', function (e) {
+      const previewImageContainer = document.querySelector(
+        '.modal-preview__container'
+      );
+
+      preview(e);
+      previewImageContainer.classList.remove('offscreen');
+    });
+  });
+};
+
+openPreview();

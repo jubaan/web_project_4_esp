@@ -3,6 +3,15 @@ let imageTitle = addNewCardForm.querySelector('#imageTitle');
 let imageURL = addNewCardForm.querySelector('#imageURL');
 let elementsSection = document.querySelector('.elements');
 
+const addNewCardToArray = function (newCard) {
+  const previewImageButtons = Array.from(
+    document.querySelectorAll('.element__place-image')
+  );
+
+  previewImageButtons.push(newCard);
+}
+
+
 addNewCardForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -26,9 +35,15 @@ addNewCardForm.addEventListener('submit', function (e) {
     imageTitle.value.toLowerCase().split(' ').join('-');
   newCard.querySelector('.form__item_type_checkbox').value =
     imageTitle.value.toLowerCase().split(' ').join('-');
-
+  
   elements.prepend(newCard); 
+  addNewCardToArray(newCard);
+  newCard.addEventListener('click', openPreview());
   removeElement();
+  
   addNewCardForm.classList.add('offscreen');
+
+  imageTitle.value = '';
+  imageURL.value = '';
 });
 

@@ -28,27 +28,32 @@ const initialCards = [
 const cardElementTemplate = document.querySelector('#elementCard').content;
 const elements = document.querySelector('.elements');
 
-initialCards.forEach((elementDetails) => {
-  const cardElement = cardElementTemplate
-    .querySelector('.element')
-    .cloneNode(true);
+const addElement = function () {
+  initialCards.forEach((elementDetails) => {
+    const cardElement = cardElementTemplate
+      .querySelector('.element')
+      .cloneNode(true);
 
-  cardElement.querySelector('.element__place-name').textContent =
-    elementDetails.name;
-  cardElement.querySelector('.element__place-image').src = elementDetails.link;
-  cardElement.querySelector('.element__place-image').alt = elementDetails.name;
-  cardElement.querySelector('.element__form-label').htmlFor =
-    elementDetails.name.toLowerCase().split(' ').join('-');
-  cardElement.querySelector('.form__item_type_checkbox').name =
-    elementDetails.name.toLowerCase().split(' ').join('-');
-  cardElement.querySelector('.form__item_type_checkbox').id =
-    elementDetails.name.toLowerCase().split(' ').join('-');
-  cardElement.querySelector('.form__item_type_checkbox').value =
-    elementDetails.name.toLowerCase().split(' ').join('-');
+    cardElement.querySelector('.element__place-name').textContent =
+      elementDetails.name;
+    cardElement.querySelector('.element__place-image').src =
+      elementDetails.link;
+    cardElement.querySelector('.element__place-image').alt =
+      elementDetails.name;
+    cardElement.querySelector('.element__form-label').htmlFor =
+      elementDetails.name.toLowerCase().split(' ').join('-');
+    cardElement.querySelector('.form__item_type_checkbox').name =
+      elementDetails.name.toLowerCase().split(' ').join('-');
+    cardElement.querySelector('.form__item_type_checkbox').id =
+      elementDetails.name.toLowerCase().split(' ').join('-');
+    cardElement.querySelector('.form__item_type_checkbox').value =
+      elementDetails.name.toLowerCase().split(' ').join('-');
 
-  elements.append(cardElement);
-});
+    elements.append(cardElement);
+  });
+};
 
+addElement();
 
 const removeElement = function () {
   const trashButtons = Array.from(
@@ -61,7 +66,6 @@ const removeElement = function () {
       console.log(e.target.parentElement);
     });
   });
-}
+};
 
 removeElement();
-
