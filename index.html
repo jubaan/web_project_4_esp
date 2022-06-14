@@ -41,7 +41,7 @@
     <footer class="footer">
       <p class="footer__text">&copy; 2021 Alrededor de los EEUU</p>
     </footer>
-    <div class="modal-form__container offscreen">
+    <div class="modal-form__container edit-profile offscreen">
       <form action="#" class="modal-form">
         <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
         <h2 class="modal-form__title">Editar perfil</h2>
@@ -55,20 +55,20 @@
         <button class="modal-form__save-button" type="submit">Guardar</button>
       </form>
     </div>
-    <div class="modal-form__container offscreen">
+    <div class="modal-form__container add-newcard offscreen">
       <form action="#" class="modal-form">
         <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
         <h2 class="modal-form__title">New Place</h2>
     
         <div class="modal-form__content">
-          <input class="modal-form__input" type="text" name="imageTitle" id="title" placeholder="Titulo" value="">
+          <input class="modal-form__input" type="text" name="imageTitle" id="imageTitle" placeholder="Titulo" value="">
           <input class="modal-form__input" type="text" name="imageURL" id="imageURL" placeholder="URL de la imagen"
             value="">
         </div>
-        <button class="modal-form__save-button" type="submit">Guardar</button>
+        <button class="modal-form__save-button" type="submit">Crear</button>
       </form>
     </div>
-    <div class="modal-form__container offscreen">
+    <div class="modal-form__container view-cardImage offscreen">
       
     </div>
   </div>
@@ -91,10 +91,11 @@
     </div>
   </template>
 
-  <script src="./scripts/openForm.js"></script>
+  <script src="./scripts/openForms.js"></script>
   <script src="./scripts/closeForm.js"></script>
-  <script src="./scripts/changeProfile.js"></script>
+  <script src="./scripts/editProfile.js"></script>
   <script src="./scripts/elementCards.js"></script>
+  <script src="./scripts/addNewCard.js"></script>
 
 </body>
 

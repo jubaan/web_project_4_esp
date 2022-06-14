@@ -1,6 +1,7 @@
 .modal-form__save-button {
   height: 50px;
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   background-color: var(--color-dark);
   border-radius: 2px;
   font-size: 18px;

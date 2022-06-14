@@ -1,7 +1,7 @@
-const closeButton = document.querySelector('.modal-form__close-button');
+const closeButtons = Array.from(document.querySelectorAll('.modal-form__close-button'));
 
-closeButton.addEventListener('click', function () {
-  const modalForm = document.querySelector('.modal-form__container');
-
-  modalForm.classList.add('offscreen');
+closeButtons.map(closeButton => {
+  closeButton.addEventListener('click', function (e) {
+    e.target.parentElement.parentElement.classList.add('offscreen');
+  });
 });

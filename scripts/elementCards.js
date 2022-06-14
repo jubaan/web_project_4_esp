@@ -49,12 +49,19 @@ initialCards.forEach((elementDetails) => {
   elements.append(cardElement);
 });
 
-const cardElement = cardElementTemplate.querySelector('.element').cloneNode(true);
-const trashButtons = Array.from(document.querySelectorAll('.element__icon.icon_type_trash'));
 
-trashButtons.map(trashButton => {
-  trashButton.addEventListener('click', function (e) {
-    e.target.parentElement.remove();
-    console.log(e.target.parentElement);
+const removeElement = function () {
+  const trashButtons = Array.from(
+    document.querySelectorAll('.element__icon.icon_type_trash')
+  );
+
+  trashButtons.map((trashButton) => {
+    trashButton.addEventListener('click', function (e) {
+      e.target.parentElement.remove();
+      console.log(e.target.parentElement);
+    });
   });
-});
+}
+
+removeElement();
+
