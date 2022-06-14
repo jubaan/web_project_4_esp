@@ -1,7 +1,9 @@
 const editProfileButton = document.querySelector('.profile__button_edit');
 
 editProfileButton.addEventListener('click', function () {
-  const editProfileModalForm = document.querySelector('.modal-form__container.edit-profile');
+  const editProfileModalForm = document.querySelector(
+    '.modal-form__container.edit-profile'
+  );
 
   editProfileModalForm.classList.remove('offscreen');
 });

@@ -101,6 +101,7 @@
 
 body {
   background-color: var(--color-dark);
+  overflow-x: hidden;
 }
 
 .offscreen {
@@ -112,4 +113,16 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+  animation: 10s ease-in-out fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+      position: absolute;
+  }
+  to {
+    opacity: 1;
+    position: relative;
+  }
 }
