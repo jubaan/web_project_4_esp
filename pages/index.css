@@ -25,7 +25,8 @@
 @import url('../blocks/footer/__text/footer__text.css');
 @import url('../blocks/elements/elements.css');
 @import url('../blocks/element/element.css');
-@import url('../blocks/element/__image/element__image.css');
+@import url('../blocks/element/__image-container/element__image-container.css');
+@import url('../blocks/element/__place-image/element__place-image.css');
 @import url('../blocks/element/__image/_place/element__image_place_valle-de-yosemite.css');
 @import url('../blocks/element/__image/_place/element__image_place_lago-louise.css');
 @import url('../blocks/element/__image/_place/element__image_place_montanas-calvas.css');

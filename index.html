@@ -35,84 +35,6 @@
         </button>
       </section>
       <section class="elements">
-        <div class="element">
-          <div class="element__image element__image_place_valle-de-yosemite"></div>
-          <div class="element__content">
-            <h2 class="element__place-name">Valle de Yosemite</h2>
-            <form class="element__form" action="#" method="POST">
-              <label class="" for="valle-de-yosemite">
-                <input type="checkbox" name="valle-de-yosemite" id="valle-de-yosemite"
-                  class="form__item form__item_type_checkbox" value="valle-de-yosemite">
-                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-              </label>
-            </form>
-          </div>
-        </div>
-        <div class="element">
-          <div class="element__image element__image_place_lago-louise"></div>
-          <div class="element__content">
-            <h2 class="element__place-name">Lago Louise</h2>
-            <form class="element__form" action="#" method="POST">
-              <label class="" for="lago-louise">
-                <input type="checkbox" name="lago-louise" id="lago-louise" class="form__item form__item_type_checkbox"
-                  value="lago-louise">
-                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-              </label>
-            </form>
-          </div>
-        </div>
-        <div class="element">
-          <div class="element__image element__image_place_montanas-calvas"></div>
-          <div class="element__content">
-            <h2 class="element__place-name">Montañas Calvas</h2>
-            <form class="element__form" action="#" method="POST">
-              <label class="" for="montanas-calvas">
-                <input type="checkbox" name="montanas-calvas" id="montanas-calvas"
-                  class="form__item form__item_type_checkbox" value="montanas-calvas">
-                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-              </label>
-            </form>
-          </div>
-        </div>
-        <div class="element">
-          <div class="element__image element__image_place_latemar"></div>
-          <div class="element__content">
-            <h2 class="element__place-name">Latemar</h2>
-            <form class="element__form" action="#" method="POST">
-              <label class="" for="latemar">
-                <input type="checkbox" name="latemar" id="latemar" class="form__item form__item_type_checkbox"
-                  value="latemar">
-                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-              </label>
-            </form>
-          </div>
-        </div>
-        <div class="element">
-          <div class="element__image element__image_place_vanoise-national-park"></div>
-          <div class="element__content">
-            <h2 class="element__place-name">Vanoise National Park</h2>
-            <form class="element__form" action="#" method="POST">
-              <label class="" for="vanoise-national-park">
-                <input type="checkbox" name="vanoise-national-park" id="vanoise-national-park"
-                  class="form__item form__item_type_checkbox" value="vanoise-national-park">
-                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-              </label>
-            </form>
-          </div>
-        </div>
-        <div class="element">
-          <div class="element__image element__image_place_lago-di-braies"></div>
-          <div class="element__content">
-            <h2 class="element__place-name">Lago di Braies</h2>
-            <form class="element__form" action="#" method="POST">
-              <label class="" for="lago-di-braies">
-                <input type="checkbox" name="lago-di-braies" id="lago-di-braies"
-                  class="form__item form__item_type_checkbox" value="lago-di-braies">
-                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-              </label>
-            </form>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="footer">
@@ -124,17 +46,37 @@
         <h2 class="modal-form__title">Editar perfil</h2>
 
         <div class="modal-form__content">
-          <input class="modal-form__input" type="text" name="name" id="name" placeholder="Nombre" value="Jacques Cousteau">
-          <input class="modal-form__input" type="text" name="profession" id="profession" placeholder="Profesión" value="Explorador">
+          <input class="modal-form__input" type="text" name="name" id="name" placeholder="Nombre"
+            value="Jacques Cousteau">
+          <input class="modal-form__input" type="text" name="profession" id="profession" placeholder="Profesión"
+            value="Explorador">
         </div>
         <button class="modal-form__save-button" type="submit">Guardar</button>
       </form>
     </div>
   </div>
 
+  <template id="elementCard">
+    <div class="element">
+      <div class="element__image-container">
+        <img class="element__place-image" src="" alt="">
+      </div>
+      <div class="element__content">
+        <h2 class="element__place-name"></h2>
+        <form class="element__form" action="#" method="POST">
+          <label class="element__form-label" for="">
+            <input type="checkbox" name="lago-di-braies" id="" class="form__item form__item_type_checkbox" value="">
+            <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </template>
+
   <script src="./scripts/openForm.js"></script>
   <script src="./scripts/closeForm.js"></script>
   <script src="./scripts/changeProfile.js"></script>
+  <script src="./scripts/elementCards.js"></script>
 
 </body>
 
