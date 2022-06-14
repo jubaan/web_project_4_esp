@@ -4,11 +4,7 @@
   font-weight: 400;
   color: var(--color-light);
   padding-top: 10px;
-}
-
-@media screen and (max-width: 425px) {
-  .modal-preview__title {
-    font-size: 18px;
-    line-height: 22px;
-  }
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
