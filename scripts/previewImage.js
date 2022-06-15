@@ -10,5 +10,5 @@ const preview = function (e) {
   );
   previewImage.src = e.target.src;
   previewImage.alt = e.target.alt;
-  previewTitle.innerHTML = e.target.alt;
+  previewTitle.textContent = e.target.alt;
 };
