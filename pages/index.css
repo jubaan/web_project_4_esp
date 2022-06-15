@@ -42,6 +42,7 @@
 @import url('../blocks/form/__item/_type/form__item_type_checkbox.css');
 @import url('../blocks/form/__pseudo-item/_type/form__pseudo-item_type_checkbox.css');
 @import url('../blocks/modal-form/modal-form.css');
+@import url('../blocks/modal-form/__form/modal-form__form.css');
 @import url('../blocks/modal-form/__container/modal-form__container.css');
 @import url('../blocks/modal-form/__close-button/modal-form__close-button.css');
 @import url('../blocks/modal-form/__content/modal-form__content.css');
@@ -49,6 +50,7 @@
 @import url('../blocks/modal-form/__input/modal-form__input.css');
 @import url('../blocks/modal-form/__save-button/modal-form__save-button.css');
 @import url('../blocks/modal-preview/modal-preview.css');
+@import url('../blocks/modal-preview/__preview/modal-preview__preview.css');
 @import url('../blocks/modal-preview/__container/modal-preview__container.css');
 @import url('../blocks/modal-preview/__close-button/modal-preview__close-button.css');
 @import url('../blocks/modal-preview/__image/modal-preview__image.css');

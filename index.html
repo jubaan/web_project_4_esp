@@ -18,7 +18,7 @@
       <section class="profile">
         <div class="profile__details">
           <div class="profile__image"></div>
-          <div class="profile__content-container">            
+          <div class="profile__content-container">
             <div class="profile__content profile__content_position_top">
               <h1 class="profile__name">Jacques Cousteau</h1>
               <button class=" profile__button profile__button_edit">
@@ -41,38 +41,45 @@
     <footer class="footer">
       <p class="footer__text">&copy; 2021 Alrededor de los EEUU</p>
     </footer>
-    <div class="modal-form__container edit-profile offscreen">
-      <form action="#" class="modal-form">
-        <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
-        <h2 class="modal-form__title">Editar perfil</h2>
+    <div class="modal-form">
+      <div class="modal-form__container edit-profile offscreen">
+        <form action="#" class="modal-form__form">
+          <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
+          <h2 class="modal-form__title">Editar perfil</h2>
 
-        <div class="modal-form__content">
-          <input class="modal-form__input" type="text" name="name" id="name" placeholder="Nombre"
-            value="Jacques Cousteau">
-          <input class="modal-form__input" type="text" name="profession" id="profession" placeholder="Profesión"
-            value="Explorador">
-        </div>
-        <button class="modal-form__save-button" type="submit">Guardar</button>
-      </form>
+          <div class="modal-form__content">
+            <input class="modal-form__input" type="text" name="name" id="name" placeholder="Nombre"
+              value="Jacques Cousteau">
+            <input class="modal-form__input" type="text" name="profession" id="profession" placeholder="Profesión"
+              value="Explorador">
+          </div>
+          <button class="modal-form__save-button" type="submit">Guardar</button>
+        </form>
+      </div>
     </div>
-    <div class="modal-form__container add-newcard offscreen">
-      <form action="#" class="modal-form">
-        <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
-        <h2 class="modal-form__title">New Place</h2>
-    
-        <div class="modal-form__content">
-          <input class="modal-form__input" type="text" name="imageTitle" id="imageTitle" placeholder="Titulo" value="">
-          <input class="modal-form__input" type="text" name="imageURL" id="imageURL" placeholder="URL de la imagen"
-            value="">
-        </div>
-        <button class="modal-form__save-button" type="submit">Crear</button>
-      </form>
+    <div class="modal-form">
+      <div class="modal-form__container add-newcard offscreen">
+        <form action="#" class="modal-form__form">
+          <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
+          <h2 class="modal-form__title">New Place</h2>
+
+          <div class="modal-form__content">
+            <input class="modal-form__input" type="text" name="imageTitle" id="imageTitle" placeholder="Titulo"
+              value="">
+            <input class="modal-form__input" type="text" name="imageURL" id="imageURL" placeholder="URL de la imagen"
+              value="">
+          </div>
+          <button class="modal-form__save-button" type="submit">Crear</button>
+        </form>
+      </div>
     </div>
-    <div class="modal-preview__container offscreen">
-      <div class="modal-preview">
-        <img src="./images/close-icon.svg" alt="close-icon" class="modal-preview__close-button">
-        <img src="#" alt="#" class="modal-preview__image">
-        <h2 class="modal-preview__title">#</h2>
+    <div class="modal-preview">
+      <div class="modal-preview__container offscreen">
+        <div class="modal-preview__preview">
+          <img src="./images/close-icon.svg" alt="close-icon" class="modal-preview__close-button">
+          <img src="#" alt="#" class="modal-preview__image">
+          <h2 class="modal-preview__title">#</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -95,7 +102,7 @@
     </div>
   </template>
 
- 
+
   <script src="./scripts/closeForm.js"></script>
   <script src="./scripts/editProfile.js"></script>
   <script src="./scripts/elementCards.js"></script>
