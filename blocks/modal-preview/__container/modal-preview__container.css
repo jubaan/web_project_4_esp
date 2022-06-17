@@ -10,8 +10,8 @@
   background-color: rgba(0, 0, 0, 0.85);
   padding: 90px auto 68px;
   color: var(--color-light);
-  animation: 1s forwards ease-in-out fadeIn;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 425px) {
