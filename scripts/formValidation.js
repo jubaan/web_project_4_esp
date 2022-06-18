@@ -1,0 +1,1 @@
+const formList = document.querySelectorAll('.form');

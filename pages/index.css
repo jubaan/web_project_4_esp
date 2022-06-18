@@ -9,7 +9,6 @@
 @import url('../blocks/profile/profile.css');
 @import url('../blocks/profile/__image/profile__image.css');
 @import url('../blocks/profile/__content-container/profile__content-container.css');
-@import url('../blocks/profile/__content/profile__content.css');
 @import url('../blocks/profile/__content/_position/profile__content_position_bottom.css');
 @import url('../blocks/profile/__content/_position/profile__content_position_top.css');
 @import url('../blocks/profile/__details/profile__details.css');
@@ -20,8 +19,6 @@
 @import url('../blocks/profile/__button/_edit/profile__button_edit.css');
 @import url('../blocks/icon/icon.css');
 @import url('../blocks/icon/_type/icon_type_edit.css');
-@import url('../blocks/icon/_type/icon_type_add.css');
-@import url('../blocks/icon/_type/icon_type_favorite.css');
 @import url('../blocks/icon/_type/icon_type_trash.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__text/footer__text.css');
@@ -29,12 +26,6 @@
 @import url('../blocks/element/element.css');
 @import url('../blocks/element/__image-container/element__image-container.css');
 @import url('../blocks/element/__place-image/element__place-image.css');
-@import url('../blocks/element/__image/_place/element__image_place_valle-de-yosemite.css');
-@import url('../blocks/element/__image/_place/element__image_place_lago-louise.css');
-@import url('../blocks/element/__image/_place/element__image_place_montanas-calvas.css');
-@import url('../blocks/element/__image/_place/element__image_place_latemar.css');
-@import url('../blocks/element/__image/_place/element__image_place_vanoise-national-park.css');
-@import url('../blocks/element/__image/_place/element__image_place_lago-di-braies.css');
 @import url('../blocks/element/__content/element__content.css');
 @import url('../blocks/element/__place-name/element__place-name.css');
 @import url('../blocks/form/__item/form__item.css');
@@ -45,7 +36,6 @@
 @import url('../blocks/modal-form/__form/modal-form__form.css');
 @import url('../blocks/modal-form/__container/modal-form__container.css');
 @import url('../blocks/modal-form/__close-button/modal-form__close-button.css');
-@import url('../blocks/modal-form/__content/modal-form__content.css');
 @import url('../blocks/modal-form/__title/modal-form__title.css');
 @import url('../blocks/modal-form/__input/modal-form__input.css');
 @import url('../blocks/modal-form/__save-button/modal-form__save-button.css');
