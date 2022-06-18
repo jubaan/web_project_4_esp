@@ -11,7 +11,7 @@
   padding: 90px auto 68px;
   color: var(--color-light);
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 425px) {
