@@ -26,6 +26,7 @@ closeContainers.map((closeContainer) => {
     }
     const form = closeContainer.querySelector('.form');
     const inputs = Array.from(form.querySelectorAll('.form__input'));
+    
     inputs.map((input) => {
       hideInputErr(form, input);
     });
