@@ -1,6 +1,6 @@
 const addNewCardForm = document.querySelector('.modal-form__container.add-newcard');
-let imageTitle = addNewCardForm.querySelector('#imageTitle');
-let imageURL = addNewCardForm.querySelector('#imageURL');
+let imageTitle = addNewCardForm.querySelector('#imagetitle');
+let imageURL = addNewCardForm.querySelector('#imageurl');
 let elementsSection = document.querySelector('.elements');
 
 const addNewCardToArray = function (newCard) {

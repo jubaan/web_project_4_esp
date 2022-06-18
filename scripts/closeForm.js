@@ -1,5 +1,5 @@
 const closeButtons = Array.from(
-  document.querySelectorAll('.modal-form__close-button')
+  document.querySelectorAll('.container__close')
 );
 
 closeButtons.map((closeButton) => {
@@ -7,9 +7,3 @@ closeButtons.map((closeButton) => {
     e.target.parentElement.parentElement.classList.add('offscreen');
   });
 });
-
-const closeButton = document.querySelector('.modal-preview__close-button')
-
-closeButton.addEventListener('click', function (e) {
-    e.target.parentElement.parentElement.classList.add('offscreen');
-  });

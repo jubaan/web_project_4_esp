@@ -42,41 +42,51 @@
       <p class="footer__text">&copy; 2021 Alrededor de los EEUU</p>
     </footer>
     <div class="modal-form">
-      <div class="modal-form__container edit-profile offscreen">
-        <form action="#" class="modal-form__form">
-          <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
+      <div class="modal-form__container edit-profile offscreen container">
+        <form action="#" class="modal-form__form form" novalidate>
+          <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button container__close">
           <h2 class="modal-form__title">Editar perfil</h2>
-
           <div class="modal-form__content">
-            <input class="modal-form__input" type="text" name="name" id="name" placeholder="Nombre"
-              value="Jacques Cousteau">
-            <input class="modal-form__input" type="text" name="profession" id="profession" placeholder="Profesión"
-              value="Explorador">
+            <label for="name">
+              <input class="modal-form__input form__input" type="text" name="name" id="name" placeholder="Nombre"
+                value="Jacques Cousteau" minLength="2" maxLength="20">
+              <span class="name-input-error form__input-error"></span>
+            </label>
+            <label for="profession">
+              <input class="modal-form__input form__input" type="text" name="profession" id="profession" placeholder="Profesión"
+                value="Explorador" minLength="2" maxLength="200">
+              <span class="profession-input-error form__input-error"></span>
+            </label>
           </div>
-          <button class="modal-form__save-button" type="submit">Guardar</button>
+          <button class="modal-form__save-button form__submit" type="submit" disabled>Guardar</button>
         </form>
       </div>
     </div>
     <div class="modal-form">
-      <div class="modal-form__container add-newcard offscreen">
-        <form action="#" class="modal-form__form">
-          <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button">
+      <div class="modal-form__container add-newcard offscreen container">
+        <form action="#" class="modal-form__form form" novalidate>
+          <img src="./images/close-icon.svg" alt="close-icon" class="modal-form__close-button conainer__close">
           <h2 class="modal-form__title">New Place</h2>
-
           <div class="modal-form__content">
-            <input class="modal-form__input" type="text" name="imageTitle" id="imageTitle" placeholder="Titulo"
-              value="">
-            <input class="modal-form__input" type="text" name="imageURL" id="imageURL" placeholder="URL de la imagen"
-              value="">
+            <label for="imagetitle">
+              <input class="modal-form__input form__input" type="text" name="imagetitle" id="imagetitle" placeholder="Titulo"
+                value="" minLength="2" maxLength="30">
+              <span class="imagetitle-input-error form__input-error"></span>
+            </label>
+            <label for="imageurl">
+              <input class="modal-form__input form__input" type="url" name="imageurl" id="imageurl" placeholder="URL de la imagen"
+                value="">
+              <span class="imageurl-input-error form__input-error"></span>
+            </label>
           </div>
-          <button class="modal-form__save-button" type="submit">Crear</button>
+          <button class="modal-form__save-button form__submit" type="submit" disabled>Crear</button>
         </form>
       </div>
     </div>
     <div class="modal-preview">
-      <div class="modal-preview__container offscreen">
+      <div class="modal-preview__container offscreen container">
         <div class="modal-preview__preview">
-          <img src="./images/close-icon.svg" alt="close-icon" class="modal-preview__close-button">
+          <img src="./images/close-icon.svg" alt="close-icon" class="modal-preview__close-button container__close">
           <img src="#" alt="#" class="modal-preview__image">
           <h2 class="modal-preview__title">#</h2>
         </div>
@@ -109,7 +119,7 @@
   <script src="./scripts/addNewCard.js"></script>
   <script src="./scripts/previewImage.js"></script>
   <script async src="./scripts/openForms.js"></script>
-
+  <script src="./scripts/formValidation.js"></script>
 </body>
 
 </html>

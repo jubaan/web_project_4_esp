@@ -45,6 +45,7 @@
 @import url('../blocks/modal-preview/__close-button/modal-preview__close-button.css');
 @import url('../blocks/modal-preview/__image/modal-preview__image.css');
 @import url('../blocks/modal-preview/__title/modal-preview__title.css');
+@import url('../blocks/form/__input-error/form__input-error.css');
 
 /* Fonts */
 @font-face {
