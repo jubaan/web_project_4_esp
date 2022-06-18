@@ -11,6 +11,5 @@ modalForm.addEventListener('submit', function (e) {
     profileNameNew.innerText = profileNameOld.value;
     profileProfession.innerText = profession.value;
     modalForm.classList.add('offscreen');
-    modalForm.reset();
   }
 });
