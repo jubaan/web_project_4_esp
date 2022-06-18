@@ -1,3 +1,5 @@
+import { hideInputError } from "./validate";
+
 const addNewCardForm = document.querySelector(
   '.modal-form__container.add-newcard'
 );

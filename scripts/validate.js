@@ -57,9 +57,6 @@ const setEventListeners = (formElement) => {
 };
 
 const enableValidation = (defaultClasses) => {
-
-  
-
   const formList = document.querySelectorAll('.form');
 
   formList.forEach((formElement) => {
@@ -71,7 +68,4 @@ const enableValidation = (defaultClasses) => {
   });
 };
 
-enableValidation({
-  formSubmit: '.form__submit',
-
-});
+enableValidation();
