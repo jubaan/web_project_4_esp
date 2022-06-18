@@ -43,8 +43,8 @@ const toggleButtonState = (inputList, buttonElement) => {
 };
 
 const setEventListeners = (formElement) => {
-  const inputList = Array.from(formElement.querySelectorAll('.form__input'));
-  const buttonElement = formElement.querySelector('.form__submit');
+  const inputList = Array.from(formElement.querySelectorAll(selectors.inputList));
+  const buttonElement = formElement.querySelector('selectors.submitButton');
 
   toggleButtonState(inputList, buttonElement);
 
@@ -56,18 +56,22 @@ const setEventListeners = (formElement) => {
   });
 };
 
-const enableValidation = (defaultClasses) => {
-  const formList = document.querySelectorAll('.form');
+const enableValidation = (selectors) => {
+  const formList = document.querySelectorAll(selectors.formList);
 
   formList.forEach((formElement) => {
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
     });
 
-    setEventListeners(formElement);
+    setEventListeners(formElement, selectors);
   });
 };
 
-enableValidation();
+enableValidation({
+  formList: '.form',
+  inputList: '.form__input',
+  submitButton: '.form__submit',
+});
 
 
