@@ -7,10 +7,14 @@ let profileProfession = document.querySelector('.profile__profession');
 modalForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
+  if (!imageTitle.validity.valid || !imageURL.validity.valid) {
+    return;
+  }
+
   if (profileNameOld.value.length > 0 && profession.value.length > 0) {
     profileNameNew.innerText = profileNameOld.value;
     profileProfession.innerText = profession.value;
+    modalForm.classList.add('offscreen');
+    modalForm.reset();
   }
-
-  modalForm.classList.add('offscreen');
 });

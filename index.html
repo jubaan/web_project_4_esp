@@ -49,12 +49,12 @@
           <div class="modal-form__content">
             <label for="name">
               <input class="modal-form__input form__input" type="text" name="name" id="name" placeholder="Nombre"
-                value="Jacques Cousteau" minLength="2" maxLength="20">
+                value="Jacques Cousteau" minLength="2" maxLength="20" autocomplete="off">
               <span class="name-input-error form__input-error"></span>
             </label>
             <label for="profession">
               <input class="modal-form__input form__input" type="text" name="profession" id="profession" placeholder="Profesión"
-                value="Explorador" minLength="2" maxLength="200">
+                value="Explorador" minLength="2" maxLength="200" autocomplete="off">
               <span class="profession-input-error form__input-error"></span>
             </label>
           </div>
@@ -70,12 +70,12 @@
           <div class="modal-form__content">
             <label for="imagetitle">
               <input class="modal-form__input form__input" type="text" name="imagetitle" id="imagetitle" placeholder="Titulo"
-                value="" minLength="2" maxLength="30">
+                value="" minLength="2" maxLength="30" autocomplete="off">
               <span class="imagetitle-input-error form__input-error"></span>
             </label>
             <label for="imageurl">
               <input class="modal-form__input form__input" type="url" name="imageurl" id="imageurl" placeholder="URL de la imagen"
-                value="">
+                value="" autocomplete="off">
               <span class="imageurl-input-error form__input-error"></span>
             </label>
           </div>
@@ -119,7 +119,7 @@
   <script src="./scripts/addNewCard.js"></script>
   <script src="./scripts/previewImage.js"></script>
   <script async src="./scripts/openForms.js"></script>
-  <script src="./scripts/formValidation.js"></script>
+  <script src="./scripts/validate.js"></script>
 </body>
 
 </html>
