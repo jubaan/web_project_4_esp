@@ -26,18 +26,15 @@ closeContainers.map((closeContainer) => {
     }
     const form = closeContainer.querySelector('.form');
     const inputs = Array.from(form.querySelectorAll('.form__input'));
-    
+
     inputs.map((input) => {
       hideInputErr(form, input);
     });
   });
 
-  closeContainer.addEventListener('keydown', function (e) {
+  window.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       closeContainer.classList.add('offscreen');
     }
   });
 });
-
-
-const escKeydown
