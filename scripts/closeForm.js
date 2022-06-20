@@ -31,4 +31,13 @@ closeContainers.map((closeContainer) => {
       hideInputErr(form, input);
     });
   });
+
+  closeContainer.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeContainer.classList.add('offscreen');
+    }
+  });
 });
+
+
+const escKeydown
