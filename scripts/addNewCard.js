@@ -16,7 +16,7 @@ const addNewCardToArray = function (newCard) {
 addNewCardForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  if (!imageTitle.validity.valid || !imageURL.validity.valid) {
+  if (!imageTitle.validity.valid && !imageURL.validity.valid) {
     return;
   }
 

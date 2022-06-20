@@ -1,4 +1,8 @@
-.form__input_type_error,
 .form__input-error {
   color: red;
+  font-size: 12px;
+  position: absolute;
+  margin-top: 6px;
+  display: block;
+  max-width: 358px;
 }

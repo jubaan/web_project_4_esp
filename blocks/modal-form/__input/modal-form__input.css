@@ -6,7 +6,7 @@
   font-size: 14px;
   line-height: 17px;
   color: var(--color-dark);
-  height: 50px;
+  height: 35px;
 }
 
 .modal-form__input::placeholder {
