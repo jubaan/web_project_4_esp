@@ -5,7 +5,7 @@ const elements = document.querySelector('.elements');
 
 const addElement = function () {
   places.forEach((elementDetails) => {
-    const cardElement = new Card(elementDetails, "#elementCard");
+    const cardElement = new Card(elementDetails);
     
     elements.append(cardElement.generateCard());
   });

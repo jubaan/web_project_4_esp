@@ -27,7 +27,12 @@ addNewCardForm.addEventListener('submit', function (e) {
     return;
   }
 
-  const newCard = new Card(imageTitle.value, imageURL.value).generateCard();
+  const place = {
+    name: imageTitle.value,
+    image: imageURL.value
+  }
+
+  const newCard = new Card(place).generateCard();
 
   elementsSection.prepend(newCard);
   addNewCardToArray(newCard);

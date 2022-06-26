@@ -9,7 +9,7 @@ const previewTitle = previewImageContainer.querySelector(
 );
 
 export default class Card {
-  constructor(place, cardSelector) {
+  constructor(place, cardSelector = '#elementCard') {
     this._name = place.name;
     this._image = place.image;
     this._isLiked = false;
