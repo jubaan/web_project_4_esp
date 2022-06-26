@@ -29,7 +29,6 @@ const openPreview = function () {
         '.modal-preview__container'
       );
 
-      preview(e);
       previewImageContainer.classList.remove('offscreen');
     });
   });

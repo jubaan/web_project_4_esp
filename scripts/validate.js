@@ -45,7 +45,7 @@ const toggleButtonState = (inputList, buttonElement) => {
 const setEventListeners = (formElement, selectors) => {
   const inputList = Array.from(formElement.querySelectorAll('.form__input'));
   const buttonElement = formElement.querySelector('.form__submit');
-  
+
   toggleButtonState(inputList, buttonElement);
 
   inputList.forEach((inputElement) => {
@@ -69,12 +69,33 @@ const enableValidation = (selectors) => {
 };
 
 enableValidation({
-  formSelector: ".popup__form",
-  inputSelector: ".popup__input",
-  submitButtonSelector: ".popup__button",
-  inactiveButtonClass: "popup__button_disabled",
-  inputErrorClass: "popup__input_type_error",
-  errorClass: "popup__error_visible"
+  formSelector: '.form',
+  inputSelector: '.form__inputt',
+  submitButtonSelector: '.popup__button',
+  inactiveButtonClass: 'popup__button_disabled',
+  inputErrorClass: 'form__input_type_error',
+  errorClass: 'popup__error_visible',
 });
 
+export default class FormValidator {
+  constructor(formSelectors, elementToValidate) {
+    this._form = formSelectors.form;
+    this._elementToValidate = elementToValidate;
+  }
+  _validateInput() {}
+  _toggleSubmitButton() {
+    
+  }
+  
+  enableValidation() {
+    const formList = document.querySelectorAll('.form');
 
+    formList.forEach((formElement) => {
+      formElement.addEventListener('submit', (e) => {
+        e.preventDefault();
+      });
+
+      setEventListeners(formElement, selectors);
+    });
+  }
+}
