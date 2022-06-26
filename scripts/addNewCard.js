@@ -1,4 +1,4 @@
-import Card from "./card.js";
+import Card from './Card.js';
 
 const addNewCardForm = document.querySelector(
   '.modal-form__container.add-newcard'
@@ -29,15 +29,14 @@ addNewCardForm.addEventListener('submit', function (e) {
 
   const place = {
     name: imageTitle.value,
-    image: imageURL.value
-  }
+    image: imageURL.value,
+  };
 
   const newCard = new Card(place).generateCard();
 
   elementsSection.prepend(newCard);
   addNewCardToArray(newCard);
   newCard.addEventListener('click', openPreview());
-  removeElement();
 
   addNewCardForm.classList.add('offscreen');
   e.target.reset();

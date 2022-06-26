@@ -92,10 +92,6 @@ export default class Card {
     previewImageContainer.classList.remove('offscreen');
   }
 
-  _closePreview(e) {
-    
-  }
-
   _toggleLike() {
     this._element._isLiked = !this._element._isLiked;
     this.checked = !this._element.checked;

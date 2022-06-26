@@ -3,7 +3,9 @@ const closeButtons = Array.from(document.querySelectorAll('.container__close'));
 closeButtons.map((closeButton) => {
   closeButton.addEventListener('click', function (e) {
     e.target.parentElement.parentElement.classList.add('offscreen');
-    e.target.parentElement.reset();
+    if (e.target.classList.contains('form')) {
+      e.target.parentElement.reset();
+    }
   });
 });
 
@@ -24,12 +26,15 @@ closeContainers.map((closeContainer) => {
     if (e.target.classList.contains('container')) {
       closeContainer.classList.add('offscreen');
     }
-    const form = closeContainer.querySelector('.form');
-    const inputs = Array.from(form.querySelectorAll('.form__input'));
 
-    inputs.map((input) => {
-      hideInputErr(form, input);
-    });
+    if (e.target.classList.contains('form')) {
+      const form = closeContainer.querySelector('.form');
+      const inputs = Array.from(form.querySelectorAll('.form__input'));
+
+      inputs.map((input) => {
+        hideInputErr(form, input);
+      });
+    }
   });
 
   window.addEventListener('keydown', function (e) {

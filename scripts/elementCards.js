@@ -1,4 +1,4 @@
-import Card from "./card.js";
+import Card from "./Card.js";
 import { places } from "./places.js";
 
 const elements = document.querySelector('.elements');
