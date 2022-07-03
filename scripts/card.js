@@ -95,6 +95,5 @@ export default class Card {
   _toggleLike() {
     this._element._isLiked = !this._element._isLiked;
     this.checked = !this._element.checked;
-    console.log(this._element);
   }
 }

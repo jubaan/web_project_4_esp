@@ -1,5 +1,6 @@
 import Card from './Card.js';
 import { places } from './places.js';
+import FormValidator from './FormValidator.js';
 
 // Add new Card Form
 
@@ -73,3 +74,21 @@ modalForm.addEventListener('submit', function (e) {
     modalForm.classList.add('offscreen');
   }
 });
+
+
+const profile = {
+  form: '.form.profile-form',
+  input: '.form__input',
+  submit: '.form__submit',
+};
+const profileFormValidation = new FormValidator(profile);
+profileFormValidation.enableValidation();
+
+
+const card = {
+  form: '.form.card-form',
+  input: '.form__input',
+  submit: '.form__submit',
+};
+const cardFormValidation = new FormValidator(card);
+cardFormValidation.enableValidation();
