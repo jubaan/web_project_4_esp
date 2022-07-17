@@ -1,7 +1,7 @@
 import './pages/index.css';
-import Card from './scripts/Card.js';
-import { places } from './scripts/places.js';
-import FormValidator from './scripts/FormValidator.js';
+import Card from './components/Card.js';
+import { places } from './components/places.js';
+import FormValidator from './components/FormValidator.js';
 import logoImage from './images/logo.svg';
 import addIcon from './images/add-icon.svg';
 import closeIcon from './images/close-icon.svg';
