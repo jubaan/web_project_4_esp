@@ -1,4 +1,4 @@
-export default class Popup {
+export class Popup {
   constructor() {}
 
   _handleEscClose() {}

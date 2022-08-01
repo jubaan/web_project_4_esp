@@ -1,3 +1,4 @@
+import Section from './components/Section.js';
 import './pages/index.css';
 import Card from './components/Card.js';
 import { places } from './components/places.js';
@@ -100,7 +101,6 @@ cardFormValidation.enableValidation();
 document.getElementById('logo').src = logoImage;
 document.getElementById('edit-icon').src = editIcon;
 document.getElementById('add-icon').src = addIcon;
-
 
 const editProfileButton = document.querySelector('.profile__button_edit');
 
