@@ -9,6 +9,7 @@ import closeIcon from './images/close-icon.svg';
 import editIcon from './images/edit-icon.svg';
 import trashIcon from './images/trash-icon.svg';
 
+
 // Add new Card Form
 
 const addNewCardForm = document.querySelector(
